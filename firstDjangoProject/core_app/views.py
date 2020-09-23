@@ -9,3 +9,12 @@ def new(request):
 
 def create(request):
     return redirect('/')
+
+def blog_post_id(request, number):
+    return HttpResponse("placeholder to display blog number: "+ str(number))
+
+def edit(request, number):
+    return HttpResponse("placeholder to edit blog number: "+ str(number))
+
+def destroy(request, number):
+    return redirect('/')

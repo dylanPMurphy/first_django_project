@@ -4,5 +4,8 @@ from . import views	# the . indicates that the views file can be found in the sa
 urlpatterns = [
     path('', views.index),
     path('new', views.new),
-    path('create', views.create)
+    path('create', views.create),
+    path('<int:number>', views.blog_post_id),
+    path('<int:number>/edit', views.edit),
+    path('<int:number>/delete', views.destroy)
 ]   
